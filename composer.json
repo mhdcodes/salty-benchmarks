@@ -1,0 +1,10 @@
+{
+	"name": "dumbo/dumbo-example",
+	"type": "project",
+	"license": "MIT",
+	"prefer-stable": false,
+	"minimum-stability": "dev",
+	"require": {
+		"notrab/dumbo": "dev-main"
+	}
+}
