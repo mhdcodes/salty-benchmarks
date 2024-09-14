@@ -58,8 +58,10 @@ The following scripts are available in the `package.json` file to run the server
 
 * `hono:simple`: Runs the Hono server with a simple setup.
 * `hono:sqlite`: Runs the Hono server with SQLite database integration.
+* `hono:ssr`: Runs the Hono server with server-side rendering capabilities.
 * `bun:simple`: Runs the Bun server with a simple setup.
 * `bun:sqlite`: Runs the Bun server with SQLite database integration.
+* `bun:ssr`: Runs the Bun server with server-side rendering capabilities.
 * `bun:simple:mc`: Runs the Bun server with a simple setup and multi-core support.
 * `bun:sqlite:mc`: Runs the Bun server with SQLite database integration and multi-core support.
 * `dumbo:simple`: Runs the Dumbo server with a simple setup.
@@ -72,3 +74,5 @@ pnpm run hono:simple
 ```
 
 Replace `hono:simple` with the script you want to run.
+
+To perform a workload test using wrk, run the following command: `wrk -t12 -c400 -d15s http://localhost:3000`
