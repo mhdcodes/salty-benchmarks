@@ -4,8 +4,10 @@
 	"scripts": {
 		"hono:simple": "tsup src/hono-simple.ts && node dist/hono-simple.js",
 		"hono:sqlite": "tsup src/hono-sqlite.ts && node dist/hono-sqlite.js",
+		"hono:ssr": "tsup src/hono-ssr.tsx && node dist/hono-ssr.js",
 		"bun:simple": "bun src/bun-simple.ts",
 		"bun:sqlite": "bun src/bun-sqlite.ts",
+		"bun:ssr": "bun src/bun-ssr.tsx",
 		"bun:simple:mc": "bun src/bun-simple-mc.ts",
 		"bun:sqlite:mc": "bun src/bun-sqlite-mc.ts",
 		"dumbo:simple": "./frankenphp php-server --root src/dumbo-simple -l localhost:3000",
@@ -14,12 +16,16 @@
 	"dependencies": {
 		"@hono/node-server": "^1.12.2",
 		"better-sqlite3": "^11.3.0",
-		"hono": "^4.6.1"
+		"hono": "^4.6.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
 	},
 	"devDependencies": {
 		"@types/better-sqlite3": "^7.6.11",
 		"@types/bun": "^1.1.9",
 		"@types/node": "^20.16.5",
+		"@types/react": "^18.3.5",
+		"@types/react-dom": "^18.3.0",
 		"tsup": "^8.2.4",
 		"typescript": "^5.6.2"
 	}
